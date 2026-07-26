@@ -105,6 +105,22 @@ nav a {
 	color: var(--midnight-blue);
 	text-decoration: none;
 }
+body{
+    background-color: var(--linen);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    
+    color: var(--dark-charcoal);
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 2rem;
+    color: var(--midnight-blue);
+}
+
+
+
 
 /* MEDIA QUERY (medium) */
 
