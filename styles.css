@@ -72,7 +72,6 @@ table {
 body {
     background-color: var(--linen);
     color: var(--dark-charcoal);
-    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -83,6 +82,8 @@ img {
 }
 main {
     padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto
 }
 
 header {
@@ -102,12 +103,12 @@ header h1 {
     padding: 0;
 }
 header p {
-    font-size: 1.5rem;
+    font-style: italic;
 }
 nav {
     background: var(--champagne-gold);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 2rem;
     padding:1rem;
 }
@@ -122,14 +123,30 @@ h2 {
     font-size: 2rem;
     margin: 2rem 0 1rem;
 }
-#welcome #offering #gallery {
-    margin-bottom: 2rem;
+h3 {
+    color: var (--soft-white)
 }
-#welcome #gallery {
+#welcome, #offer, #gallery {
+    padding: 1rem;
+}
+
+#welcome{
     border-bottom: 1rem solid var(--champagne-gold);
     padding-bottom: 2rem;
 }
-
+#basket {
+    border-bottom: 2px solid var(--champagne-gold);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+#artisan, #exclusive, #basket {
+    background: var(--olive-green);
+    color: var(I--soft-white);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
 /* MEDIA QUERY (medium) */
 
 /* MEDIA QUERY (large) */
