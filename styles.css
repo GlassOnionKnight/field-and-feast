@@ -89,7 +89,6 @@ main {
 header {
     background-color: var(--midnight-blue);
     color: var(--soft-white);
-    padding: 2rem 1rem;
     text-align: center;
 }
 .logo {
@@ -103,14 +102,14 @@ header h1 {
     padding: 0;
 }
 header p {
+    padding: 1rem;
     font-style: italic;
 }
 nav {
     background: var(--champagne-gold);
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
-    padding:1rem;
+
 }
 nav a {
     color: var(--midnight-blue);
@@ -118,25 +117,34 @@ nav a {
     font-weight:bold;
     font-size:1rem;
 }
+nav p {
+    color: var(--midnight-blue);
+    font-style: normal;
+    font-size: 1rem;
+}
+
 h2 {
     color: var(--midnight-blue);
     font-size: 2rem;
     margin: 2rem 0 1rem;
 }
 h3 {
-    color: var (--soft-white)
+    font-size: 2rem;
+    color: var(--soft-white)
 }
+#about, #gallery {
+    border-bottom: 2px solid var(--champagne-gold);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
 #welcome, #offer, #gallery {
     padding: 1rem;
 }
 #welcome{
     padding-bottom: 2rem;
 }
-#offer {
-    display: grid;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
+
 #basket {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
@@ -163,7 +171,11 @@ h3 {
     gap: 1rem;
 
 }
-
+.gallery-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 .gallery-cards li {
     background: var(--soft-white);
     padding: 1rem;
@@ -219,6 +231,7 @@ footer p:nth-child(3), footer p:nth-child(4), footer p:nth-child(5) {
     }
 }
 /* MEDIA QUERY (large) */
+@media screen and (min-width: 900px) {
     header h1 {
         font-size: 4rem;
     }
@@ -235,6 +248,7 @@ footer p:nth-child(3), footer p:nth-child(4), footer p:nth-child(5) {
     .gallery-cards {
         grid-template-columns: repeat(3, 1fr);
     }
+}
 /* MEDIA QUERY (xl) */
 
 @media screen and (min-width: 1200px) {
@@ -246,4 +260,3 @@ footer p:nth-child(3), footer p:nth-child(4), footer p:nth-child(5) {
         }
 
 }
- 
