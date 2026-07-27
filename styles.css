@@ -115,7 +115,7 @@ nav a {
     color: var(--midnight-blue);
     text-decoration: none;
     font-weight:bold;
-    font-size:1rem;
+    font-size:2rem;
 }
 nav p {
     color: var(--midnight-blue);
@@ -124,6 +124,8 @@ nav p {
 }
 
 h2 {
+    display: flex;
+    justify-content: left;
     color: var(--midnight-blue);
     font-size: 2rem;
     margin: 2rem 0 2rem;
@@ -133,12 +135,13 @@ h3 {
     color: var(--soft-white)
 }
 p {
+    display: flex;
     padding: 2rem;
     font-size: 1rem;
 }
 .main-content {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
 }
 #about, #gallery {
     border-bottom: 2px solid var(--champagne-gold);
@@ -231,7 +234,6 @@ footer p:nth-child(3), footer p:nth-child(4), footer p:nth-child(5) {
 @media screen and (min-width: 600px){
     .main-content {
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
     }
     #basket {
         grid-column: 1/ -1;
