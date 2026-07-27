@@ -129,26 +129,30 @@ h3 {
 #welcome, #offer, #gallery {
     padding: 1rem;
 }
-
 #welcome{
-    border-bottom: 1rem solid var(--champagne-gold);
     padding-bottom: 2rem;
 }
-#basket {
-    border-bottom: 2px solid var(--champagne-gold);
+#offer {
+    display: grid;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
-#artisan, #exclusive, #basket {
+#basket {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+#offer, 
+#exclusive, 
+#basket{
     background: var(--olive-green);
-    color: var(I--soft-white);
+    color: var(--soft-white);
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 #basket ul {
-    list-style-type: bullet;
+    list-style-type: disc;
     padding-left: 1rem;
 }
 
@@ -157,7 +161,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 0;
 
 }
 
@@ -171,7 +174,11 @@ h3 {
     font-style: italic;
 }
 .button {
-    margin: 1rem 0;
+    display: grid;
+    color: var(--soft-white);
+    justify-content: center;
+    background-color: var(--olive-green);
+    padding: 1rem;
 }
 .button a {
     display: block;
@@ -212,5 +219,31 @@ footer p:nth-child(3), footer p:nth-child(4), footer p:nth-child(5) {
     }
 }
 /* MEDIA QUERY (large) */
+    header h1 {
+        font-size: 4rem;
+    }
 
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .gallery-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 /* MEDIA QUERY (xl) */
+
+@media screen and (min-width: 1200px) {
+        main {
+            max-width: 100%;
+        }
+        .gallery-cards {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+}
+ 
