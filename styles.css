@@ -132,6 +132,10 @@ h3 {
     font-size: 2rem;
     color: var(--soft-white)
 }
+p {
+    padding: 1rem;
+    font-size: 1rem;
+}
 #about, #gallery {
     border-bottom: 2px solid var(--champagne-gold);
     padding-bottom: 2rem;
@@ -143,6 +147,11 @@ h3 {
 }
 #welcome{
     padding-bottom: 2rem;
+}
+#offer {
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 #basket {
@@ -157,7 +166,7 @@ h3 {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
+    margin: 1rem 0;
 }
 #basket ul {
     list-style-type: disc;
@@ -190,15 +199,14 @@ h3 {
     color: var(--soft-white);
     justify-content: center;
     background-color: var(--olive-green);
-    padding: 1rem;
+    border-radius: 5px;
+
 }
 .button a {
     display: block;
     text-align: center;
     background-color: var(--olive-green);
     color: var(--soft-white);
-    padding: 1rem;
-    border-radius: 5px;
     font-weight: bold;
 }
 
@@ -206,7 +214,6 @@ footer{
     background-color: var(--midnight-blue);
     color: var(--soft-white);
     text-align: center;
-    padding: 1rem;
 }
 footer p {
     margin: 1rem 0;
