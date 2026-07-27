@@ -189,8 +189,28 @@ footer{
     text-align: center;
     padding: 1rem;
 }
+footer p {
+    margin: 1rem 0;
 
+}
+
+footer p:nth-child(3), footer p:nth-child(4), footer p:nth-child(5) {
+    color: var(--champagne-gold);
+}
 /* MEDIA QUERY (medium) */
-
+@media screen and (min-width: 600px){
+    .gallery-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #offer {
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        gap: 1rem;
+    }
+    #basket {
+        grid-column: 1/ -1;
+    }
+}
 /* MEDIA QUERY (large) */
+
 /* MEDIA QUERY (xl) */
